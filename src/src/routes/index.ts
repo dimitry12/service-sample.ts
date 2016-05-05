@@ -4,7 +4,9 @@ const index = Router();
 
 /* GET home page. */
 index.get('/', function(req, res, next) {
-  res.render('index', { title: 'Visual Studio Code!' });
+  res.json({
+    "test": "ok"
+  });
 });
 
 /* GET Quick Start. */
