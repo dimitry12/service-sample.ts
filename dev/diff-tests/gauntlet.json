@@ -1,0 +1,18 @@
+{
+	"sample-test": {
+		"name": "sample-test-dir",
+		"endpoint": "",
+		"tests": [
+			{
+				"name": "ok",
+				"files": {
+					"inputs": {
+					},
+					"output": "output.json"
+				},
+				"ms" : 1350
+			}
+		]
+	}
+}
+

@@ -1,0 +1,13 @@
+sudo: required
+services:
+  - docker
+language: node_js
+node_js:
+  - "5"
+before_install:
+  - sudo service docker restart; sleep 10; docker --version
+install:
+  - make run
+  - npm install -g unicity_gauntlet
+script:
+  - ./dev/diff-tests/gauntlet.sh localhost:8080 ./dev/diff-tests/gauntlet.json ./dev/diff-tests/tests "" http://unicity.github.io/jsondiffpatch/demo
