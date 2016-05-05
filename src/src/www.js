@@ -4,7 +4,7 @@ var debugModule = require('debug');
 var http = require('http');
 var debug = debugModule('node-express-typescript:server');
 // Get port from environment and store in Express.
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '8080');
 app_1.default.set('port', port);
 // create server and listen on provided port (on all network interfaces).
 var server = http.createServer(app_1.default);
